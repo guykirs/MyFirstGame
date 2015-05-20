@@ -16,7 +16,7 @@ public class Background
 
     public void update()
     {
-        x+=dx;
+        x+=GamePanel.MOVESPEED;
 
         if(x<-GamePanel.WIDTH)
         {
@@ -33,8 +33,5 @@ public class Background
         }
     }
 
-    public void setVector(int dx)
-    {
-        this.dx = dx;
-    }
+
 }
